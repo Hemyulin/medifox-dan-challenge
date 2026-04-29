@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "test:unit": "ng test --include '**/*.unit.test.ts'",
+    "test:smoke": "ng test --include '**/*.smoke.test.ts'",
+    "test:report": "ng test --configuration report"
   },
   "private": true,
   "packageManager": "npm@11.6.1",

@@ -91,8 +91,17 @@
         "test": {
           "builder": "@angular/build:unit-test",
           "options": {
-          "tsConfig": "tsconfig.spec.json",
+            "tsConfig": "tsconfig.spec.json",
             "runner": "vitest"
+          },
+          "configurations": {
+            "report": {
+              "watch": false,
+              "reporters": [
+                "default",
+                ["junit", { "outputFile": "reports/junit.xml" }]
+              ]
+            }
           }
         }
       }
