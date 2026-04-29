@@ -1,0 +1,14 @@
+﻿<mat-card>
+  <mat-card-content>
+    <app-ampel-control [aktuellesAmpelLicht]="aktuellesAmpelLicht()" />
+
+    <div class="button-row">
+      <button mat-raised-button color="primary" (click)="onGreen()">Green</button>
+      <button mat-raised-button color="primary" (click)="onYellow()">Yellow</button>
+      <button mat-raised-button color="primary" (click)="onRed()">Red</button>
+    </div>
+
+    <button mat-raised-button class="automatic-button" (click)="onAutomatic()">Automatic</button>
+  </mat-card-content>
+</mat-card>
+

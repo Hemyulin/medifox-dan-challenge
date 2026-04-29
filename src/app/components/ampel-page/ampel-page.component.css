@@ -1,0 +1,25 @@
+﻿:host {
+  display: block;
+  max-width: 320px;
+  margin: 16px auto;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.button-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  width: 100%;
+}
+
+.automatic-button {
+  width: 100%;
+}
+
