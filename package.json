@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "test:unit": "ng test --include '**/*.unit.test.ts'",
+    "test:smoke": "ng test --include '**/*.smoke.test.ts'",
+    "test:report": "ng test --configuration report"
   },
   "private": true,
   "packageManager": "npm@11.6.1",
@@ -26,7 +29,12 @@
     "@angular/build": "^21.2.7",
     "@angular/cli": "^21.2.7",
     "@angular/compiler-cli": "^21.2.0",
+    "jsdom": "^28.1.0",
     "prettier": "^3.8.1",
-    "typescript": "~5.9.2"
+    "typescript": "~5.9.2",
+    "vitest": "^4.1.5"
+  },
+  "volta": {
+    "node": "22.12.0"
   }
 }

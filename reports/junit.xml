@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="5" failures="0" errors="0" time="0.213195542">
+    <testsuite name="src/app/components/ampel-page/ampel-page.component.smoke.test.ts" timestamp="2026-04-29T19:00:14.063Z" hostname="work-station" tests="1" failures="0" errors="0" skipped="0" time="0.089168792">
+        <testcase classname="src/app/components/ampel-page/ampel-page.component.smoke.test.ts" name="AmpelPageComponent smoke test &gt; renders the traffic light controls" time="0.088394417">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/app/components/ampel-page/ampel-page.component.unit.test.ts" timestamp="2026-04-29T19:00:14.063Z" hostname="work-station" tests="4" failures="0" errors="0" skipped="0" time="0.12402675">
+        <testcase classname="src/app/components/ampel-page/ampel-page.component.unit.test.ts" name="AmpelPageComponent &gt; starts with no active light" time="0.084368792">
+        </testcase>
+        <testcase classname="src/app/components/ampel-page/ampel-page.component.unit.test.ts" name="AmpelPageComponent &gt; switches the red light on manually" time="0.018693083">
+        </testcase>
+        <testcase classname="src/app/components/ampel-page/ampel-page.component.unit.test.ts" name="AmpelPageComponent &gt; switches the yellow light on manually" time="0.011567959">
+        </testcase>
+        <testcase classname="src/app/components/ampel-page/ampel-page.component.unit.test.ts" name="AmpelPageComponent &gt; switches the green light on manually" time="0.008531">
+        </testcase>
+    </testsuite>
+</testsuites>

@@ -2,7 +2,8 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": false
   },
   "newProjectRoot": "projects",
   "projects": {
@@ -86,6 +87,22 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "tsconfig.spec.json",
+            "runner": "vitest"
+          },
+          "configurations": {
+            "report": {
+              "watch": false,
+              "reporters": [
+                "default",
+                ["junit", { "outputFile": "reports/junit.xml" }]
+              ]
+            }
+          }
         }
       }
     }

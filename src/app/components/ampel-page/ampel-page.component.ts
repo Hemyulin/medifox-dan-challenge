@@ -17,19 +17,21 @@ export class AmpelPageComponent implements OnDestroy {
 
   aktuellesAmpelLicht = signal<AmpelLicht>(AmpelLicht.None);
 
-  onGreen(): void {
-    this.aktuellesAmpelLicht.set(AmpelLicht.Green);
+  setLight(light: AmpelLicht): void {
+    this.aktuellesAmpelLicht.set(light);
     this.stopAutomatic();
+  }
+
+  onGreen(): void {
+    this.setLight(AmpelLicht.Green);
   }
 
   onYellow(): void {
-    this.aktuellesAmpelLicht.set(AmpelLicht.Yellow);
-    this.stopAutomatic();
+    this.setLight(AmpelLicht.Yellow);
   }
 
   onRed(): void {
-    this.aktuellesAmpelLicht.set(AmpelLicht.Red);
-    this.stopAutomatic();
+    this.setLight(AmpelLicht.Red);
   }
 
   onAutomatic(): void {
@@ -61,4 +63,3 @@ export class AmpelPageComponent implements OnDestroy {
     this.stopAutomatic();
   }
 }
-
